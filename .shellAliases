@@ -1,7 +1,15 @@
+echo loading shellAliases…
+
+
+# shell related
+LS_OPTIONS='-alG'
+alias l='ls $LS_OPTIONS'
+alias ..='cd ..'
+alias t='tree'
+
+# git related
+alias ga='git add -p'
 alias g='git'
 alias gs='git status'
 alias glo='git log --oneline'
-alias gl='git log'
-alias ..='cd ..'
-alias l='ls -al'
-alias ga='git add -p'
+alias gl='git log --graph'
