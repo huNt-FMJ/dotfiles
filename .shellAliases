@@ -1,0 +1,7 @@
+alias g='git'
+alias gs='git status'
+alias glo='git log --oneline'
+alias gl='git log'
+alias ..='cd ..'
+alias l='ls -al'
+alias ga='git add -p'
