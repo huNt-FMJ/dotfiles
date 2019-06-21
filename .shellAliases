@@ -13,3 +13,8 @@ alias g='git'
 alias gs='git status'
 alias glo='git log --oneline'
 alias gl='git log --graph'
+alias gb='git branch'
+alias gba='git branch --all'
+
+# Commit shortcuts
+alias vin='vi ~/next_commit'
