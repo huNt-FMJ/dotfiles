@@ -4,6 +4,7 @@ echo loading shellAliases…
 # shell related
 LS_OPTIONS='-alG'
 alias l='ls $LS_OPTIONS'
+alias lt='ls -halt'
 alias ..='cd ..'
 alias t='tree'
 
