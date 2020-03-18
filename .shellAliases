@@ -9,13 +9,14 @@ alias ..='cd ..'
 alias t='tree'
 
 # git related
-alias ga='git add -p'
 alias g='git'
+alias ga='git add -p'
 alias gs='git status'
-alias glo='git log --oneline'
 alias gl='git log --graph'
+alias glo='git log --oneline'
 alias gb='git branch'
 alias gba='git branch --all'
+alias gd='git diff'
 
-# Commit shortcuts
+# Commit helper shortcuts
 alias vin='vi ~/next_commit'
