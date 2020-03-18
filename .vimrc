@@ -79,13 +79,6 @@ let g:solarized_termcolor=256
 set nowrap
 set expandtab
 
-"Clojure Stuff"
-let clj_highlight_buildins=1
-let clj_paren_rainbow=1
-
-"Map NERDTree shortcut
-noremap <Leader>n :NERDTree<CR>
-
 "vim footer
 set statusline=%t       "tail of the filename
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
