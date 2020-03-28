@@ -23,7 +23,7 @@ function replaceDotFile() {
 testFunction 1 2
 replaceDotFile .tmux.conf
 
-if [ ! -d ~/.backups ] then
+if [ ! -d ~/.backups ]; then
   mkdir ~/.backups
 fi
 replaceDotFile .vimrc
