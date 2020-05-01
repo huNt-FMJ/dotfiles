@@ -24,3 +24,16 @@ alias gd='git diff'
 
 # Commit helper shortcuts
 alias vin='vi ~/next_commit'
+
+# Rust
+export EDITOR=vim
+export RUST_BACKTRACE=1
+
+# FZF
+export FZF_DEFAULT_COMMAND='find .' # Make sure to include dotfiles 
+
+# Ruby/RVM
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Zettelkasten
+alias zk="~/Rust_Projects/Zettelkastenanalysis/target/debug/zettel_analysis"
