@@ -2,7 +2,7 @@ echo loading shellAliases…
 
 
 # shell related
-LS_OPTIONS='-alGF'
+LS_OPTIONS='-alFH'
 alias l='ls $LS_OPTIONS'
 alias lt='ls -halt'
 alias ..='cd ..'
