@@ -14,19 +14,24 @@ function replaceDotFile() {
     mv ~/$1 ~/$1_old
     ln -s ./dotfiles/$1 ~/$1
   else
-    ln -s ./dotfiles/$1 ~/$1
+    ln -s ./$1 ~/$1
   fi
 }
 
 
+function setSymlinkForFile() {
+    ln -s ./$1 ~/$1
+}
 
-testFunction 1 2
+
+
 replaceDotFile .tmux.conf
 
 if [ ! -d ~/.backups ]; then
   mkdir ~/.backups
 fi
 replaceDotFile .vimrc
+replaceDotFile .gitconfig
 
 echo list of files having been backuped
 ls -al ~/*_old
