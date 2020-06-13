@@ -26,6 +26,10 @@ noremap <Leader>s :update<CR>
 noremap <Leader>q :exit<CR>
 noremap <Leader>e :!python3 %<CR>
 
+" Nerdtree stuff: https://github.com/preservim/nerdtree
+noremap <Leader>t :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 "activate automatic Indenting
 set ai
 
@@ -50,6 +54,12 @@ set nu
 "set a visual line at 80 character limit when 80 characters are hit
 highlight ColorColumn ctermbg=magenta
 call matchadd('colorColumn', '\%81v', 100)
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+call plug#end()
+
 
 " highlight matching parantheses
 set showmatch
@@ -93,3 +103,5 @@ set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through fil
 
 au BufNewFile,BufRead Jenkinsfile setf groovy
+
+
