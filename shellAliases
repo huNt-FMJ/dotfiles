@@ -3,12 +3,13 @@ echo loading shellAliases…
 
 # shell related
 LS_OPTIONS='-alFH'
+alias cp='cp -iv'
 alias l='ls $LS_OPTIONS'
 alias lt='ls -halt'
 alias ..='cd ..'
 alias t='tree'
-alias v='vim'
 alias vi='echo use v'
+alias v='vim'
 
 # git related
 alias g='git'
@@ -24,7 +25,7 @@ alias gba='git branch --all'
 alias gd='git diff'
 
 # Commit helper shortcuts
-alias vin='vi ~/next_commit'
+alias vin='vim ~/next_commit'
 
 # Rust
 export EDITOR=vim
