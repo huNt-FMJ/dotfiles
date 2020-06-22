@@ -8,14 +8,12 @@ function testFunction() {
 }
 
 function replaceDotFile() {
-  if test -e $1; then
+  if test -e ~/$1; then
     echo $1 already exists
     echo "backing up old $1 file (~/$1_old)"
     mv ~/$1 ~/$1_old
-    ln -s ./$(pwd)/$1 ~/$1
-  else
-    ln -s ./$1 ~/$1
   fi
+  ln -s $(pwd)/$1 ~/$1
 }
 
 
