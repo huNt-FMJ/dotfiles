@@ -12,7 +12,7 @@ function replaceDotFile() {
     echo $1 already exists
     echo "backing up old $1 file (~/$1_old)"
     mv ~/$1 ~/$1_old
-    ln -s ./dotfiles/$1 ~/$1
+    ln -s ./$(pwd)/$1 ~/$1
   else
     ln -s ./$1 ~/$1
   fi
