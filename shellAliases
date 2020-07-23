@@ -38,4 +38,4 @@ export FZF_DEFAULT_COMMAND='find .' # Make sure to include dotfiles
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Zettelkasten
-alias zk="~/Rust_Projects/Zettelkastenanalysis/target/debug/zettel_analysis"
+alias zk="~/projects/Rust/Zettelkastenanalysis/target/debug/zettel_analysis -d $ZKDIR"
